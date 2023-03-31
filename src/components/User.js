@@ -4,11 +4,16 @@ export default function User() {
 
     //flex items-center w-96 h-32 mt-32 bg-white shadow rounded-lg 
     return (
-        <div className='p-16 max-w-lg max-h-64 mx-auto
+        <div className='p-4 max-w-64 max-h-48 mx-auto
          bg-white rounded-xl shadow-lg flex 
-         items-center space-x-4 '>
-            <div className=' bg-slate-600'>
-                <p className='font-bold'>Username</p>
+        '>
+            <div className='space-y-2'>
+                <p className='font-bold md:text-left'>Username</p>
+                <input className='mr-64 border min-w-full'></input>
+                <p className='font-bold md:text-left'>Age (Years)</p>
+                <input className='mr-64 border min-w-full'></input>
+                <button className='bg-violet-800 text-slate-50
+                w-1/5 border-solid border-violet-400 border-2'>Add User</button>
             </div>
         </div>
     )
