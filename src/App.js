@@ -1,10 +1,19 @@
 import './App.css';
-import User from './components/User.js';
+import User from './components/User/User.js';
+import UserList from './components/UserList/UserList.js'
 
 function App() {
+
+  const userListChangeHandler = (userName, userAge) => {
+
+  }
+
   return (
-    <div className='bg-slate-600 flex flex-col w-screen h-screen pd-8'>
-      <User />
+    <div className='flex flex-col space-y-4'>
+      <div className='bg-slate-600 flex flex-col w-screen h-screen min-h-fit p-8'>
+        <User onAddUser={userListChangeHandler} />
+        <UserList />
+      </div>
     </div>
   );
 }
