@@ -7,7 +7,7 @@ export default function Card(props) {
         <div className=' border border-solid'>
             <p className='font-bold'>
                 {name} <span className='font-normal'>( </span>
-                {age}<span className='font-normal'> years old )</span>
+                {age} <span className='font-normal'> years old )</span>
             </p>
 
         </div>
