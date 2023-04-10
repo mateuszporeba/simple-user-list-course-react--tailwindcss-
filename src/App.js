@@ -47,7 +47,7 @@ function App() {
   return (
     <div className='flex flex-col space-y-4 bg-slate-500'>
       <div className=' flex flex-col w-screen h-screen min-h-fit p-8'>
-        <div className={isModal?'blur-sm':''}>
+        <div className={isModal?'blur-[1px]':''}>
         <User onAddUser={addUserHandler} onErrorInfo={changeModalContent} showModal={showModal} />
         {content}
         </div>

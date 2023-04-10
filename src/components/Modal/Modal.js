@@ -10,7 +10,7 @@ export default function Modal(props) {
             <div className='absolute top-[25%]  left-0 right-0 mx-auto
             min-w-[22rem] max-w-xl h-[10rem]'>
                 <div className='bg-violet-900 bg- rounded-t-2xl'>
-                    <p className='text-center p-4 text-4xl'>Invalid input</p>
+                    <p className=' text-slate-200 text-center p-4 text-4xl'>Invalid input</p>
                 </div>
                 <div className='bg-white rounded-b-2xl h-[10rem] p-6 text-left text-lg'>
                     <p>{props.errorContent} {modalContent}</p>
